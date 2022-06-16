@@ -1,0 +1,468 @@
+* {
+    outline: 0 !important;
+    appearance: none !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    background: #FCFCFC !important;
+    user-select: none;
+    overflow-x: hidden;
+    font-family: Lato;
+}
+
+.container-1 {
+    display: flex;
+    width: 93% !important;
+    margin: 0 auto !important;
+    grid-template-columns: 14rem auto 23rem !important;
+    gap: 3.75rem;
+}
+
+h5 {
+    font-size: 1.063rem;
+}
+
+h4 {
+    font-size: 0.863rem;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 40.7908px;
+}
+
+p {
+    font-size: 0.594rem;
+}
+
+.side-profile {
+    margin-top: 5rem !important;
+}
+
+.profile-photo {
+    width: 3.44rem;
+    height: 3.44rem;
+    overflow: hidden;
+}
+
+.logo {
+    width: 9.56rem;
+    height: 2rem;
+}
+
+.line {
+    content: " ";
+    width: 100%;
+    height: 0.5px;
+    background: #E0DEFA;
+}
+
+aside .sidebar {
+    top: 2.5rem;
+    height: 86vh;
+    width: 9.9vw !important;
+}
+
+aside .sidebar a {
+    transition: all 300ms ease;
+    color: #C4C4C4;
+    position: relative;
+}
+
+aside .sidebar a ion-icon,
+aside .sidebar a h3 {
+    font-size: 1.13rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a.active {
+    color: #3C48F2;
+}
+
+aside .sidebar a.active:before {
+    content: " ";
+    width: 3px;
+    height: 20px;
+    border-radius: 30px;
+    position: absolute;
+    left: -3.853rem;
+    background: #3C48F2;
+}
+
+aside .sidebar a:hover {
+    color: #3C48F2;
+}
+
+aside .sidebar a:hover ion-icon {
+    margin-left: 1rem !important;
+}
+
+
+/* MAIN CONTENT SECTION */
+
+header button {
+    display: none;
+}
+
+.search {
+    color: #A5A6A6;
+    border: 1px solid #3C48F2;
+    border-radius: 1rem;
+    padding: 0.75rem 0.7rem !important;
+    padding-left: 10rem;
+}
+
+.search input::placeholder {
+    color: #A5A6A6;
+    font-size: 1rem;
+}
+
+
+/* Content */
+
+main .background {
+    content: " ";
+    position: absolute;
+    top: 19rem;
+    width: 100%;
+    height: 93%;
+    background: linear-gradient(285.64deg, rgba(242, 243, 247, 0.68) 28.87%, #E4E7FC 87.69%);
+    box-shadow: 63px 13px 92px rgba(212, 212, 220, 0.27);
+    border-radius: 104px 0px 0px 0px;
+}
+
+main .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    animation: animateForm 1s ease forwards;
+}
+
+main .content1:hover,
+.content2-container:hover,
+.inspiration-content:hover {
+    box-shadow: none !important;
+    margin-top: -0.5rem !important;
+}
+
+label {
+    font-size: 1.15rem;
+    color: #A5A6A6;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-top: 3.002rem !important;
+    margin-bottom: 2.125rem !important;
+}
+
+label.active {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.navigation-content label:hover {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.content1,
+.content2-container {
+    background-color: white !important;
+    width: 13.739rem;
+    height: 22.303rem;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+.content1 {
+    padding: 8.813rem 2.15rem 1.676rem 2.478rem!important;
+}
+
+.content2-container {
+    background-size: contain;
+    padding-top: 15.2rem !important;
+}
+
+.text-content2 {
+    background-color: white !important;
+    border-radius: 1.78rem 1.78rem 2.078rem 2.078rem !important;
+    padding: 1.5rem 2rem 1.5rem 2rem!important;
+}
+
+.content1-container .food-content {
+    position: absolute;
+    border-radius: 80px;
+    width: 6.997rem;
+    height: 6.997rem;
+    left: 8.5rem;
+    top: 1.5rem;
+}
+
+
+/* .content2-container .bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+} */
+
+.like-container {
+    position: relative;
+}
+
+.like {
+    border-radius: 80px;
+    padding: 0.5rem !important;
+    text-align: center;
+    background: #3C48F2;
+    position: absolute;
+    top: -9.5rem;
+    left: -3rem;
+    font-size: 1.208rem !important;
+}
+
+.like-travel .like {
+    top: -15.5rem;
+    left: -0.5rem;
+}
+
+h6 {
+    font-size: 0.94rem;
+}
+
+h2 {
+    font-size: 1.25rem !important;
+}
+
+.text-content p {
+    font-size: 0.729rem;
+    line-height: 14px;
+}
+
+.travel {
+    display: none;
+}
+
+#toggle:checked~.breakfast {
+    display: none;
+}
+
+#toggle:checked~.travel {
+    display: block;
+}
+
+@keyframes animateForm {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* InspIration */
+
+.inspiration {
+    margin-left: 6rem !important
+}
+
+.inspiration-content-container {
+    display: grid;
+    gap: 1.978rem;
+}
+
+.inspiration-content {
+    padding: 1.663rem 1.875rem !important;
+    width: 25.5rem;
+    transition: all 300ms ease;
+}
+
+.inspiration-content p,
+.inspiration-content h6 {
+    font-size: 0.97rem;
+    line-height: 1.125rem
+}
+
+
+/* Post */
+
+.post,
+.task {
+    padding: 1.875rem 2.438rem !important;
+}
+
+.task {
+    margin-top: 1.978rem !important;
+    transition: all 300ms ease;
+}
+
+.btn {
+    background: #3C48F2;
+    color: #fff;
+    font-size: 0.813rem;
+    padding: 0.406rem 1.5rem !important;
+    border-radius: 0.75rem;
+}
+
+::placeholder {
+    font-size: 0.938rem;
+    font-weight: 300;
+    color: #676767;
+}
+
+.task .icon {
+    font-size: 2.188rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    .container-1 {
+        width: 93% !important;
+        grid-template-columns: 7rem auto 23rem !important;
+        gap: 0rem;
+    }
+    .logo,
+    .side-profile,
+    aside .sidebar h3 {
+        display: none !important;
+    }
+    aside .sidebar {
+        width: 4.8vw !important;
+    }
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+    aside .sidebar .line {
+        width: 1rem;
+    }
+    main .content {
+        grid-template-columns: 1fr;
+    }
+    .navigation-content {
+        text-align: left !important;
+    }
+    main .inspiration {
+        margin-left: -3rem !important;
+    }
+    main .post-task {
+        margin-left: 7.4rem !important;
+    }
+    main header {
+        width: 108% !important;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .container-1 {
+        width: 100%;
+    }
+    aside {
+        position: fixed !important;
+        left: -100%;
+        background: #FCFCFC !important;
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 0px 13.4107px 23.4954px rgba(196, 196, 196, 0.6);
+        height: 100vh;
+        padding-right: 2.5rem !important;
+        padding-left: 2.5rem !important;
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+    .logo,
+    aside .sidebar h3 {
+        display: inline !important;
+    }
+    main .full-content-container {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        margin: 0 auto auto !important;
+    }
+    main header {
+        width: 108% !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        align-items: center !important;
+        padding: 0 0.8rem !important;
+        height: 4.6rem !important;
+        width: 100% !important;
+        margin: 0;
+    }
+    header .profile-photo,
+    .search,
+    main .background {
+        display: none !important;
+    }
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+    /* aside .sidebar a ion-icon {
+        display: grid !important;
+    } */
+    aside .close {
+        display: inline-block !important;
+        cursor: pointer;
+    }
+    aside .sidebar .line {
+        width: 300%;
+    }
+    /* main .background {
+        height: 245% !important;
+    } */
+    main {
+        margin-top: 8rem !important;
+        padding: 0 1rem !important;
+    }
+    main .content {
+        position: relative !important;
+        /* margin: 0 auto auto !important; */
+    }
+    main .inspiration {
+        margin-left: 0 !important;
+    }
+    main .post-task {
+        margin-left: 0 !important;
+    }
+    .navigation-content {
+        width: 14rem;
+        text-align: center !important;
+    }
+    .col-10 {
+        width: 100% !important;
+    }
+    header button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        position: absolute;
+        left: 0.5rem;
+    }
+    header .title {
+        margin-left: 3.6rem !important;
+    }
+}

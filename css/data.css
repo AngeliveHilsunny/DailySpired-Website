@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-white,
+.text-white {
+    color: #fff !important;
+}
+
+.bg-primary,
+.text-primary {
+    color: #3C48F2 !important;
+}
+
+.text-light-blue,
+.bg-light-blue {
+    color: #ACA6F7 !important;
+}
+
+.text-very-light-blue,
+.bg-very-light-blue {
+    color: #E0DEFA !important;
+}
+
+.text-gray,
+.bg-gray {
+    color: #B7B4C7 !important;
+}
+
+.text-light-gray,
+.bg-light-gray {
+    color: #A5A6A6 !important;
+}
+
+.text-dark-gray,
+.bg-dark-gray {
+    color: #8F8F8F !important;
+}
+
+.text-very-dark-gray,
+.bg-very-dark-gray {
+    color: #676767 !important;
+}
+
+.text-blue-gray,
+.bg-blue-gray {
+    color: #958DC8 !important;
+}
+
+.card-border-radius {
+    border-radius: 2.188rem !important;
+}
+
+.border-radius-1 {
+    border-radius: 2.078rem !important;
+}
+
+.border-radius-2 {
+    border-radius: 1.688rem !important;
+}
+
+.border-radius-3 {
+    border-radius: 1.278rem !important;
+}
+
+.box-shadow-1 {
+    box-shadow: 11.6649px 20.9967px 107.317px rgba(99, 87, 240, 0.19);
+}
+
+.box-shadow-primary {
+    filter: drop-shadow(0px 6.4138px 18.0753px rgba(60, 72, 242, 0.51));
+}
+
+.box-shadow-food {
+    box-shadow: 0px 13.4107px 23.4954px rgba(196, 196, 196, 0.6);
+}
+
+.box-shadow-2 {
+    box-shadow: 7.57282px 13.6311px 69.6699px rgba(99, 87, 240, 0.05);
+}
+
+.text-extra-bold {
+    font-weight: 900 !important;
+}
+
+.text-bold {
+    font-weight: 700 !important;
+}
+
+.text-semi-bold {
+    font-weight: 600 !important;
+}
+
+.text-medium {
+    font-weight: 500 !important;
+}
+
+.text-regular {
+    font-weight: 400 !important;
+}
+
+.text-light {
+    font-weight: 300 !important;
+}

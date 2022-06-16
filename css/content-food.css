@@ -1,0 +1,452 @@
+* {
+    outline: 0 !important;
+    appearance: none !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    background: #FCFCFC !important;
+    user-select: none;
+    overflow-x: hidden;
+    font-family: Lato;
+}
+
+.container-1 {
+    display: flex;
+    width: 93% !important;
+    margin: 0 auto !important;
+    grid-template-columns: 14rem auto 23rem !important;
+    gap: 3.75rem;
+}
+
+h5 {
+    font-size: 1.063rem;
+}
+
+h4 {
+    font-size: 0.863rem;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 40.7908px;
+}
+
+p {
+    font-size: 0.594rem;
+}
+
+.side-profile {
+    margin-top: 5rem !important;
+}
+
+.profile-photo {
+    width: 3.44rem;
+    height: 3.44rem;
+    overflow: hidden;
+}
+
+.logo {
+    width: 9.56rem;
+    height: 2rem;
+}
+
+.line {
+    content: " ";
+    width: 100%;
+    height: 0.5px;
+    background: #E0DEFA;
+}
+
+aside .sidebar {
+    top: 2.5rem;
+    height: 86vh;
+    width: 9.9vw !important;
+}
+
+aside .sidebar a {
+    transition: all 300ms ease;
+    color: #C4C4C4;
+    position: relative;
+}
+
+aside .sidebar a ion-icon,
+aside .sidebar a h3 {
+    font-size: 1.13rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a.active {
+    color: #3C48F2;
+}
+
+aside .sidebar a.active:before {
+    content: " ";
+    width: 3px;
+    height: 20px;
+    border-radius: 30px;
+    position: absolute;
+    left: -3.853rem;
+    background: #3C48F2;
+}
+
+aside .sidebar a:hover {
+    color: #3C48F2;
+}
+
+aside .sidebar a:hover ion-icon {
+    margin-left: 1rem !important;
+}
+
+
+/* MAIN CONTENT SECTION */
+
+header button {
+    display: none;
+}
+
+.search {
+    color: #A5A6A6;
+    border: 1px solid #3C48F2;
+    border-radius: 1rem;
+    padding: 0.75rem 0.7rem !important;
+    padding-left: 10rem;
+}
+
+.search input::placeholder {
+    color: #A5A6A6;
+    font-size: 1rem;
+}
+
+
+/* Content */
+
+main .background {
+    content: " ";
+    position: absolute;
+    top: 19rem;
+    width: 100%;
+    height: 93%;
+    background: linear-gradient(285.64deg, rgba(242, 243, 247, 0.68) 28.87%, #E4E7FC 87.69%);
+    box-shadow: 63px 13px 92px rgba(212, 212, 220, 0.27);
+    border-radius: 104px 0px 0px 0px;
+}
+
+main .food-content-box {
+    margin-top: 5.814rem !important;
+    margin-left: 4.313rem !important;
+    height: 100%;
+    padding: 14.75rem 5.313rem 0rem!important;
+    border-radius: 33.24px 33.24px 0px 0px;
+    /* width: 49.375rem; */
+}
+
+main .food-content-box .food-image {
+    position: absolute;
+    border-radius: 10rem;
+    width: 15.438rem;
+    height: 15.438rem;
+    left: 21rem;
+    top: 2rem;
+}
+
+main .just-for-you {
+    margin-top: 9rem !important;
+}
+
+main .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    animation: animateForm 1s ease forwards;
+}
+
+main .content1:hover,
+.content2-container:hover,
+.inspiration-content:hover {
+    box-shadow: none !important;
+    margin-top: -0.5rem !important;
+}
+
+label {
+    font-size: 1.15rem;
+    color: #A5A6A6;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-top: 3.002rem !important;
+    margin-bottom: 1.3rem !important;
+    margin-left: -1.2rem !important;
+}
+
+label.active {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.navigation-content label:hover {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.content1 {
+    background-color: white !important;
+    width: 11rem;
+    height: 20rem;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+.content1 {
+    padding: 8.813rem 1.6rem 1.676rem 1.6rem!important;
+}
+
+.content1-container .food-content {
+    position: absolute;
+    border-radius: 80px;
+    width: 6.997rem;
+    height: 6.997rem;
+    left: 6rem;
+    top: 1.5rem;
+}
+
+.like-container {
+    position: relative;
+}
+
+.like {
+    border-radius: 80px;
+    padding: 0.5rem !important;
+    text-align: center;
+    background: #3C48F2;
+    position: absolute;
+    top: -9.5rem;
+    left: -2.5rem;
+    font-size: 1.208rem !important;
+}
+
+.back-container {
+    position: relative;
+}
+
+.back {
+    border-radius: 80px;
+    padding: 0.5rem !important;
+    text-align: center;
+    position: absolute;
+    top: -16.2rem;
+    left: 2rem;
+    font-size: 1.875rem !important;
+    filter: drop-shadow(7px 20px 32px rgba(100, 87, 240, 0.382));
+}
+
+.like-container-food .like {
+    font-size: 1.875rem !important;
+    top: -16.2rem;
+    left: 34rem;
+}
+
+h6 {
+    font-size: 0.94rem;
+}
+
+h2 {
+    font-size: 1.25rem !important;
+}
+
+.text-food-content h2 {
+    font-size: 1.875rem !important;
+}
+
+.text-food-content p {
+    font-size: 1.063rem !important;
+}
+
+.text-content p {
+    font-size: 0.729rem;
+    line-height: 14px;
+}
+
+
+/* InspIration */
+
+.inspiration {
+    margin-left: 6rem !important
+}
+
+.inspiration-content-container {
+    display: grid;
+    gap: 1.978rem;
+}
+
+.inspiration-content {
+    padding: 1.663rem 1.875rem !important;
+    width: 25.5rem;
+    transition: all 300ms ease;
+}
+
+.inspiration-content p,
+.inspiration-content h6 {
+    font-size: 0.97rem;
+    line-height: 1.125rem
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+    .container-1 {
+        width: 93% !important;
+        grid-template-columns: 7rem auto 23rem !important;
+        gap: 0rem;
+    }
+    .logo,
+    .side-profile,
+    aside .sidebar h3 {
+        display: none !important;
+    }
+    aside .sidebar {
+        width: 4.8vw !important;
+    }
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+    aside .sidebar .line {
+        width: 1rem;
+    }
+    main .content {
+        grid-template-columns: 1fr;
+    }
+    .navigation-content {
+        text-align: left !important;
+    }
+    main .inspiration {
+        margin-left: -3rem !important;
+    }
+    main header {
+        width: 108% !important;
+    }
+    .just-for-you {
+        display: none !important;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .container-1 {
+        width: 100%;
+    }
+    aside {
+        position: fixed !important;
+        left: -100%;
+        background: #FCFCFC !important;
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 0px 13.4107px 23.4954px rgba(196, 196, 196, 0.6);
+        height: 100vh;
+        padding-right: 2.5rem !important;
+        padding-left: 2.5rem !important;
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+    .logo,
+    aside .sidebar h3 {
+        display: inline !important;
+    }
+    main .full-content-container {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        margin: 0 auto auto !important;
+    }
+    main header {
+        width: 108% !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        align-items: center !important;
+        padding: 0 0.8rem !important;
+        height: 4.6rem !important;
+        width: 100% !important;
+        margin: 0;
+    }
+    header .profile-photo,
+    .search,
+    main .background {
+        display: none !important;
+    }
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+    /* aside .sidebar a ion-icon {
+        display: grid !important;
+    } */
+    aside .close {
+        display: inline-block !important;
+        cursor: pointer;
+    }
+    aside .sidebar .line {
+        width: 300%;
+    }
+    /* main .background {
+        height: 245% !important;
+    } */
+    main {
+        margin-top: 8rem !important;
+        padding: 0 1rem !important;
+    }
+    main .content {
+        position: relative !important;
+        /* margin: 0 auto auto !important; */
+    }
+    main .inspiration {
+        margin-left: 0 !important;
+    }
+    .navigation-content {
+        width: 14rem;
+        text-align: center !important;
+    }
+    .col-10 {
+        width: 100% !important;
+    }
+    header button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        position: absolute;
+        left: 0.5rem;
+    }
+    header .title {
+        margin-left: 3.6rem !important;
+    }
+    .just-for-you {
+        display: none !important;
+    }
+    .back {
+        left: -1rem !important;
+    }
+    .like-container-food .like-container .like {
+        left: 4rem !important;
+    }
+    /* .food-content-box {
+        padding: 1rem !important;
+    } */
+}

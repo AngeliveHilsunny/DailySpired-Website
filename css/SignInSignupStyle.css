@@ -1,0 +1,97 @@
+body {
+    background: url("../assets/Background.png") no-repeat center/cover;
+    font-family: Lato;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box-box {
+    box-shadow: -45px 46px 101px rgba(99, 107, 224, 0.4);
+    border-radius: 35px;
+    animation: animateForm 1s ease forwards;
+    position: relative;
+}
+
+.box1,
+.box2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.img-bg {
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 30.0426px;
+    line-height: 36px;
+    margin-bottom: 0 !important;
+}
+
+.line {
+    width: 32px;
+    height: 7px;
+    border-radius: 25px;
+    margin-top: 16px !important;
+}
+
+.card-body {}
+
+.data-form {
+    margin: 55px 0px 0px !important;
+    color: rgba(172, 166, 247, 0.66);
+}
+
+.buttonGroup button {
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    background: #3C48F2;
+    border-radius: 27px;
+    height: 46px;
+}
+
+input[type=checkbox] {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ACA6F7;
+}
+
+.box2 {
+    display: none;
+}
+
+#toggle:checked~.box1 {
+    display: none;
+}
+
+#toggle:checked~.box2 {
+    display: block;
+}
+
+@keyframes animateForm {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#toggle {
+    appearance: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    img {
+        display: none;
+    }
+}
