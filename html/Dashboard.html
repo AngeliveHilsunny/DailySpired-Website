@@ -1,314 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-    <link rel="stylesheet" href="../css/Dashboard.css">
-    <link rel="stylesheet" href="../css/data.css">
-</head>
+    <link rel="stylesheet" href="../css/Dashboard.css" />
+    <link rel="stylesheet" href="../css/data.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container-1">
-        <aside class="vh-100" style="position: sticky; top: 0; z-index: 100; ">
-            <div class="top d-flex align-items-center justify-content-between mt-5">
-                <img src="../assets/logo.png" alt="logo" class="logo d-block ">
-                <div class="close d-none" id="close-btn">
-                    <span class="material-symbols-rounded">close</span>
-                </div>
+      <aside class="vh-100" style="position: sticky; top: 0; z-index: 100">
+        <div class="top d-flex align-items-center justify-content-between mt-5">
+          <img src="../assets/logo.png" alt="logo" class="logo d-block" />
+          <div class="close d-none" id="close-btn">
+            <span class="material-symbols-rounded">close</span>
+          </div>
+        </div>
+
+        <div class="side-profile">
+          <div class="person-profile align-items-center d-flex mb-4">
+            <div class="">
+              <img
+                src="../assets/profile.png"
+                alt="profile"
+                class="profile-photo d-block"
+              />
             </div>
-
-            <div class="side-profile">
-                <div class="person-profile align-items-center d-flex mb-4">
-                    <div class="">
-                        <img src="../assets/profile.png" alt="profile" class="profile-photo d-block">
-                    </div>
-                    <div class="name ms-3">
-                        <h2 class="text-primary text-bold" style="font-size: 1rem;">Loina Sallie</h2>
-                        <p class="text-gray" style="font-size: 0.6875rem;">@liona29</p>
-                    </div>
-                </div>
-                <div class="detail-profile d-flex justify-content-between text-center">
-                    <div class="followers">
-                        <h4 class="text-bold">30k</h4>
-                        <p class="text-gray">Followers</p>
-                    </div>
-                    <div class="followers">
-                        <h4 class="text-bold">391</h4>
-                        <p class="text-gray">Following</p>
-                    </div>
-                    <div class="followers">
-                        <h4 class="text-bold">21</h4>
-                        <p class="text-gray">Content</p>
-                    </div>
-                </div>
-
+            <div class="name ms-3">
+              <h2 class="text-primary text-bold" style="font-size: 1rem">
+                Loina Sallie
+              </h2>
+              <p class="text-gray" style="font-size: 0.6875rem">@liona29</p>
             </div>
+          </div>
+          <div
+            class="detail-profile d-flex justify-content-between text-center"
+          >
+            <div class="followers">
+              <h4 class="text-bold">30k</h4>
+              <p class="text-gray">Followers</p>
+            </div>
+            <div class="followers">
+              <h4 class="text-bold">391</h4>
+              <p class="text-gray">Following</p>
+            </div>
+            <div class="followers">
+              <h4 class="text-bold">21</h4>
+              <p class="text-gray">Content</p>
+            </div>
+          </div>
+        </div>
 
-            <div class="sidebar position-relative align-center">
-                <div class="line mt-3 mb-5"> </div>
-                <a href="#" class="active align-items-center d-flex" style="height: 3.7rem;">
-                    <ion-icon name="home-outline"></ion-icon>
-                    <h3 class="ms-2">Discover</h3>
+        <div class="sidebar position-relative align-center">
+          <div class="line mt-3 mb-5"></div>
+          <a
+            href="#"
+            class="active align-items-center d-flex"
+            style="height: 3.7rem"
+          >
+            <ion-icon name="home-outline"></ion-icon>
+            <h3 class="ms-2">Discover</h3>
+          </a>
+          <a href="#" class="align-items-center d-flex" style="height: 3.7rem">
+            <ion-icon name="person-outline"></ion-icon>
+            <h3 class="ms-2">Profile</h3>
+          </a>
+          <a href="#" class="align-items-center d-flex" style="height: 3.7rem">
+            <ion-icon name="stopwatch-outline"></ion-icon>
+            <h3 class="ms-2">Schedule</h3>
+          </a>
+          <div class="line mt-5"></div>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT SECTION -->
+      <main class="container-xxl col-10 mt-5">
+        <!-- Header -->
+        <header
+          class="d-flex align-items-center position-relative justify-content-between"
+        >
+          <button class="border-0" id="menu-btn">
+            <span class="material-symbols-rounded">menu</span>
+          </button>
+          <div class="title">
+            <h1 class="text-bold">Discover</h1>
+            <h5 style="font-weight: 300">
+              Welcome, <span class="text-bold text-primary">Liona Sallie</span>
+            </h5>
+          </div>
+          <div class="right-header d-flex align-items-center gap-5">
+            <div class="icon text-primary" style="font-size: 1.5rem">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+            <div
+              class="search d-flex height justify-content-left align-items-center"
+            >
+              <ion-icon
+                name="search-outline"
+                style="font-size: 1.5rem"
+              ></ion-icon>
+              <input
+                type="text"
+                class="form-input ms-3 me-5"
+                style="border: none"
+                placeholder="Search"
+              />
+            </div>
+            <img
+              src="../assets/profile.png"
+              alt="profile"
+              class="profile-photo d-block"
+            />
+          </div>
+        </header>
+
+        <div class="background"></div>
+        <div class="full-content-container d-flex position-relative">
+          <!-- Content -->
+          <div class="container col-4 ms-5">
+            <input type="checkbox" id="toggle" />
+            <!-- Breakfast-Content -->
+            <div class="breakfast">
+              <div
+                class="navigation-content ms-4 text-center"
+                style="margin-top: -1.1rem !important"
+              >
+                <label for="" class="text-bold me-3 active">Breakfast</label>
+                <label for="toggle" class="text-bold">Travel</label>
+              </div>
+              <div class="content ms-4">
+                <a href="../html/content-food.html">
+                  <div class="content1-container">
+                    <div class="content1 bg-light border-radius-1 box-shadow-1">
+                      <div class="like-container">
+                        <div class="like-container box-shadow-primary">
+                          <ion-icon
+                            name="heart-outline"
+                            class="icon-like like text-white"
+                          ></ion-icon>
+                        </div>
+                      </div>
+                      <img
+                        src="../assets/salads.png"
+                        alt="salad"
+                        class="box-shadow-food food-content"
+                      />
+                      <div class="text-content">
+                        <h2 class="content-title text-primary text-extra-bold">
+                          Spicy and Creamy Slaw
+                        </h2>
+                        <h6 class="text-regular text-very-dark-gray mt-2">
+                          By Andy Baraghani
+                        </h6>
+                        <p class="text-light text-very-dark-gray mt-4">
+                          This super-flexible, all-purpose salad turns cabbage
+                          into luscious tangles of crisp leaves generously
+                          coated in a rich and bright dressing.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </a>
-                <a href="#" class="align-items-center d-flex" style="height: 3.7rem;">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <h3 class=" ms-2">Profile</h3>
+                <a href="../html/content-food.html">
+                  <div class="content1-container">
+                    <div class="content1 bg-light border-radius-1 box-shadow-1">
+                      <div class="like-container">
+                        <div class="like-container box-shadow-primary">
+                          <ion-icon
+                            name="heart-outline"
+                            class="icon-like like text-white"
+                          ></ion-icon>
+                        </div>
+                      </div>
+                      <img
+                        src="../assets/salmon.png"
+                        alt="salmon"
+                        class="box-shadow-food food-content"
+                      />
+                      <div class="text-content">
+                        <h2 class="content-title text-primary text-extra-bold">
+                          Salmon <br />
+                          Greek Salad
+                        </h2>
+                        <h6 class="text-regular text-very-dark-gray mt-2">
+                          ByJessica Gavin
+                        </h6>
+                        <p class="text-light text-very-dark-gray mt-4">
+                          Light, fresh and healthy grilled salmon Greek salad
+                          recipe. Crisp vegetables are tossed in a tangy lemon
+                          basil dressing and topped with flaky salmon.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </a>
-                <a href="#" class="align-items-center d-flex" style="height: 3.7rem;">
-                    <ion-icon name="stopwatch-outline"></ion-icon>
-                    <h3 class=" ms-2">Schedule</h3>
+                <a href="../html/content-food.html">
+                  <div class="content1-container">
+                    <div class="content1 bg-light border-radius-1 box-shadow-1">
+                      <div class="like-container">
+                        <div class="like-container box-shadow-primary">
+                          <ion-icon
+                            name="heart-outline"
+                            class="icon-like like text-white"
+                          ></ion-icon>
+                        </div>
+                      </div>
+                      <img
+                        src="../assets/salmon.png"
+                        alt="salmon"
+                        class="box-shadow-food food-content"
+                      />
+                      <div class="text-content">
+                        <h2 class="content-title text-primary text-extra-bold">
+                          Salmon <br />
+                          Greek Salad
+                        </h2>
+                        <h6 class="text-regular text-very-dark-gray mt-2">
+                          ByJessica Gavin
+                        </h6>
+                        <p class="text-light text-very-dark-gray mt-4">
+                          Light, fresh and healthy grilled salmon Greek salad
+                          recipe. Crisp vegetables are tossed in a tangy lemon
+                          basil dressing and topped with flaky salmon.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </a>
-                <div class="line mt-5"> </div>
+                <a href="../html/content-food.html">
+                  <div class="content1-container">
+                    <div class="content1 bg-light border-radius-1 box-shadow-1">
+                      <div class="like-container">
+                        <div class="like-container box-shadow-primary">
+                          <ion-icon
+                            name="heart-outline"
+                            class="icon-like like text-white"
+                          ></ion-icon>
+                        </div>
+                      </div>
+                      <img
+                        src="../assets/salads.png"
+                        alt="salad"
+                        class="box-shadow-food food-content"
+                      />
+                      <div class="text-content">
+                        <h2 class="content-title text-primary text-extra-bold">
+                          Spicy and Creamy Slaw
+                        </h2>
+                        <h6 class="text-regular text-very-dark-gray mt-2">
+                          By Andy Baraghani
+                        </h6>
+                        <p class="text-light text-very-dark-gray mt-4">
+                          This super-flexible, all-purpose salad turns cabbage
+                          into luscious tangles of crisp leaves generously
+                          coated in a rich and bright dressing.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </aside>
 
-        <!-- MAIN CONTENT SECTION -->
-        <main class="container-xxl col-10 mt-5">
-            <!-- Header -->
-            <header class="d-flex align-items-center position-relative justify-content-between">
-                <button class="border-0" id="menu-btn">
-                    <span class="material-symbols-rounded">menu</span>
-                </button>
-                <div class="title">
-                    <h1 class="text-bold">Discover</h1>
-                    <h5 style="font-weight: 300">Welcome, <span class="text-bold text-primary">Liona Sallie</span></h5>
-                </div>
-                <div class="right-header d-flex align-items-center gap-5">
-                    <div class="icon text-primary" style="font-size: 1.5rem;">
-                        <ion-icon name="notifications-outline"></ion-icon>
-                    </div>
-                    <div class="search d-flex height justify-content-left align-items-center">
-                        <ion-icon name="search-outline" style="font-size: 1.5rem;"></ion-icon>
-                        <input type="text" class="form-input ms-3 me-5" style="border: none;" placeholder="Search">
-                    </div>
-                    <img src="../assets/profile.png" alt="profile" class="profile-photo d-block">
-                </div>
-            </header>
+            <!-- Travel Content -->
+            <div class="travel">
+              <div
+                class="navigation-content ms-4 text-center"
+                style="margin-top: -1.1rem !important"
+              >
+                <label for="toggle" class="text-bold me-3">Breakfast</label>
+                <label for="" class="text-bold active">Travel</label>
+              </div>
 
-            <div class="background"> </div>
-            <div class="full-content-container d-flex position-relative">
-                <!-- Content -->
-                <div class="container col-4 ms-5">
-                    <input type="checkbox" id="toggle">
-                    <!-- Breakfast-Content -->
-                    <div class="breakfast">
-                        <div class="navigation-content ms-4 text-center" style="margin-top: -1.1rem !important">
-                            <label for="" class="text-bold me-3 active">Breakfast</label>
-                            <label for="toggle" class="text-bold">Travel</label>
-                        </div>
-                        <div class="content ms-4">
-                            <a href="../html/content-food.html">
-                                <div class="content1-container">
-                                    <div class="content1 bg-light border-radius-1 box-shadow-1">
-                                        <div class="like-container">
-                                            <div class="like-container box-shadow-primary">
-                                                <ion-icon name="heart-outline" class="icon-like like text-white"></ion-icon>
-                                            </div>
-                                        </div>
-                                        <img src="../assets/salads.png" alt="salad" class="box-shadow-food food-content">
-                                        <div class="text-content">
-                                            <h2 class="content-title text-primary text-extra-bold">Spicy and Creamy Slaw</h2>
-                                            <h6 class="text-regular text-very-dark-gray mt-2">By Andy Baraghani</h6>
-                                            <p class="text-light text-very-dark-gray mt-4">This super-flexible, all-purpose salad turns cabbage into luscious tangles of crisp leaves generously coated in a rich and bright dressing. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="../html/content-food.html">
-                                <div class="content1-container">
-                                    <div class="content1 bg-light border-radius-1 box-shadow-1">
-                                        <div class="like-container">
-                                            <div class="like-container box-shadow-primary">
-                                                <ion-icon name="heart-outline" class="icon-like like text-white"></ion-icon>
-                                            </div>
-                                        </div>
-                                        <img src="../assets/salmon.png" alt="salmon" class="box-shadow-food food-content">
-                                        <div class="text-content">
-                                            <h2 class="content-title text-primary text-extra-bold">Salmon <br> Greek Salad</h2>
-                                            <h6 class="text-regular text-very-dark-gray mt-2">ByJessica Gavin</h6>
-                                            <p class="text-light text-very-dark-gray mt-4">Light, fresh and healthy grilled salmon Greek salad recipe. Crisp vegetables are tossed in a tangy lemon basil dressing and topped with flaky salmon.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="../html/content-food.html">
-                                <div class="content1-container">
-                                    <div class="content1 bg-light border-radius-1 box-shadow-1">
-                                        <div class="like-container">
-                                            <div class="like-container box-shadow-primary">
-                                                <ion-icon name="heart-outline" class="icon-like like text-white"></ion-icon>
-                                            </div>
-                                        </div>
-                                        <img src="../assets/salmon.png" alt="salmon" class="box-shadow-food food-content">
-                                        <div class="text-content">
-                                            <h2 class="content-title text-primary text-extra-bold">Salmon <br> Greek Salad</h2>
-                                            <h6 class="text-regular text-very-dark-gray mt-2">ByJessica Gavin</h6>
-                                            <p class="text-light text-very-dark-gray mt-4">Light, fresh and healthy grilled salmon Greek salad recipe. Crisp vegetables are tossed in a tangy lemon basil dressing and topped with flaky salmon.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="../html/content-food.html">
-                                <div class="content1-container">
-                                    <div class="content1 bg-light border-radius-1 box-shadow-1">
-                                        <div class="like-container">
-                                            <div class="like-container box-shadow-primary">
-                                                <ion-icon name="heart-outline" class="icon-like like text-white"></ion-icon>
-                                            </div>
-                                        </div>
-                                        <img src="../assets/salads.png" alt="salad" class="box-shadow-food food-content">
-                                        <div class="text-content">
-                                            <h2 class="content-title text-primary text-extra-bold">Spicy and Creamy Slaw</h2>
-                                            <h6 class="text-regular text-very-dark-gray mt-2">By Andy Baraghani</h6>
-                                            <p class="text-light text-very-dark-gray mt-4">This super-flexible, all-purpose salad turns cabbage into luscious tangles of crisp leaves generously coated in a rich and bright dressing. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+              <div class="content ms-4" data-bs-spy="scroll">
+                <a href="#">
+                  <div
+                    class="content2-container bg-light border-radius-1 box-shadow-1"
+                    style="background-image: url('../assets/mountain.jpg')"
+                  >
+                    <div class="content2">
+                      <div
+                        class="like-container like-travel box-shadow-primary"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="icon-like like text-white"
+                        ></ion-icon>
+                      </div>
+                      <div class="text-content2">
+                        <h2 class="content-title text-primary text-extra-bold">
+                          Patio in Oia
+                        </h2>
+                        <h6 class="text-regular text-very-dark-gray mt-2">
+                          North-western tip of Santorini
+                        </h6>
+                      </div>
                     </div>
-
-                    <!-- Travel Content -->
-                    <div class="travel">
-                        <div class="navigation-content ms-4 text-center" style="margin-top: -1.1rem !important">
-                            <label for="toggle" class="text-bold me-3">Breakfast</label>
-                            <label for="" class="text-bold active">Travel</label>
-                        </div>
-
-                        <div class="content ms-4 " data-bs-spy="scroll">
-                            <a href="#">
-                                <div class="content2-container bg-light border-radius-1 box-shadow-1" style="background-image: url('../assets/mountain.jpg');">
-                                    <div class="content2 ">
-                                        <div class="like-container like-travel box-shadow-primary">
-                                            <ion-icon name="heart-outline" class="icon-like like text-white"></ion-icon>
-                                        </div>
-                                        <div class="text-content2 ">
-                                            <h2 class="content-title text-primary text-extra-bold">Patio in Oia</h2>
-                                            <h6 class="text-regular text-very-dark-gray mt-2">North-western tip of Santorini</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="content2-container bg-light border-radius-1 box-shadow-1" style="background-image: url('../assets/calmingplace.jpg');">
-                                    <div class="content2 ">
-                                        <div class="like-container like-travel box-shadow-primary">
-                                            <ion-icon name="heart-outline" class="icon-like like text-white"></ion-icon>
-                                        </div>
-                                        <div class="text-content2 ">
-                                            <h2 class="content-title text-primary text-extra-bold">Patio in Oia</h2>
-                                            <h6 class="text-regular text-very-dark-gray mt-2">North-western tip of Santorini</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="content2-container bg-light border-radius-1 box-shadow-1" style="background-image: url('../assets/calmingplace.jpg');">
-                                    <div class="content2 ">
-                                        <div class="like-container like-travel box-shadow-primary">
-                                            <ion-icon name="heart-outline" class="icon-like like text-white"></ion-icon>
-                                        </div>
-                                        <div class="text-content2 ">
-                                            <h2 class="content-title text-primary text-extra-bold">Patio in Oia</h2>
-                                            <h6 class="text-regular text-very-dark-gray mt-2">North-western tip of Santorini</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="content2-container bg-light border-radius-1 box-shadow-1" style="background-image: url('../assets/mountain.jpg');">
-                                    <div class="content2 ">
-                                        <div class="like-container like-travel box-shadow-primary">
-                                            <ion-icon name="heart-outline" class="icon-like like text-white"></ion-icon>
-                                        </div>
-                                        <div class="text-content2 ">
-                                            <h2 class="content-title text-primary text-extra-bold">Patio in Oia</h2>
-                                            <h6 class="text-regular text-very-dark-gray mt-2">North-western tip of Santorini</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div
+                    class="content2-container bg-light border-radius-1 box-shadow-1"
+                    style="background-image: url('../assets/calmingplace.jpg')"
+                  >
+                    <div class="content2">
+                      <div
+                        class="like-container like-travel box-shadow-primary"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="icon-like like text-white"
+                        ></ion-icon>
+                      </div>
+                      <div class="text-content2">
+                        <h2 class="content-title text-primary text-extra-bold">
+                          Patio in Oia
+                        </h2>
+                        <h6 class="text-regular text-very-dark-gray mt-2">
+                          North-western tip of Santorini
+                        </h6>
+                      </div>
                     </div>
-                </div>
-
-                <!-- Inspiration -->
-                <div class="inspiration container col-4">
-                    <label for="" class="text-bold active">Inspiration</label>
-                    <div class="inspiration-content-container">
-                        <a href="#">
-                            <div class="inspiration-content bg-white border-radius-3 box-shadow-3">
-                                <h2 class="text-primary text-extra-bold">Only 6 Exercises <br> You Need to Get a Six-Pack</h2>
-                                <h6 class="text-semi-bold text-very-dark-gray mt-2">The Best Abs Workout</h6>
-                                <p class="text-light text-very-dark-gray mt-2">Want to look like Cristiano Ronaldo? We asked some of the country's best trainers to share their favorite abs exercises to get there.</p>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="inspiration-content bg-white border-radius-3 box-shadow-3">
-                                <h2 class="text-primary text-extra-bold">Only 6 Exercises <br> You Need to Get a Six-Pack</h2>
-                                <h6 class="text-semi-bold text-very-dark-gray mt-2">The Best Abs Workout</h6>
-                                <p class="text-light text-very-dark-gray mt-2">Want to look like Cristiano Ronaldo? We asked some of the country's best trainers to share their favorite abs exercises to get there.</p>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="inspiration-content bg-white border-radius-3 box-shadow-3">
-                                <h2 class="text-primary text-extra-bold">Only 6 Exercises <br> You Need to Get a Six-Pack</h2>
-                                <h6 class="text-semi-bold text-very-dark-gray mt-2">The Best Abs Workout</h6>
-                                <p class="text-light text-very-dark-gray mt-2">Want to look like Cristiano Ronaldo? We asked some of the country's best trainers to share their favorite abs exercises to get there.</p>
-                            </div>
-                        </a>
+                  </div>
+                </a>
+                <a href="#">
+                  <div
+                    class="content2-container bg-light border-radius-1 box-shadow-1"
+                    style="background-image: url('../assets/calmingplace.jpg')"
+                  >
+                    <div class="content2">
+                      <div
+                        class="like-container like-travel box-shadow-primary"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="icon-like like text-white"
+                        ></ion-icon>
+                      </div>
+                      <div class="text-content2">
+                        <h2 class="content-title text-primary text-extra-bold">
+                          Patio in Oia
+                        </h2>
+                        <h6 class="text-regular text-very-dark-gray mt-2">
+                          North-western tip of Santorini
+                        </h6>
+                      </div>
                     </div>
-                </div>
-
-                <!-- Post & Task -->
-                <div class="post-task">
-                    <!-- Post -->
-                    <div class="post bg-white border-radius-3 box-shadow-3" style="margin-top: 3.002rem !important;">
-                        <h2 class="text-primary text-extra-bold">New post</h2>
-                        <div class="write-content d-flex gap-4 mt-4 mb-4">
-                            <img src="../assets/profile.png" alt="profile" class="profile-photo d-block">
-                            <input type="text" placeholder="Write content..." class="border-0">
-                        </div>
-                        <div class="line mt-2"> </div>
-                        <div class="option-post d-flex justify-content-between mt-4 align-items-center">
-                            <div class="option d-flex gap-4" style="font-size: 1rem">
-                                <ion-icon name="images-outline" class="text-light-gray"></ion-icon>
-                                <h6 class="text-bold text-light-gray">H1</h6>
-                                <h6 class="text-bold text-light-gray">H2</h6>
-                                <h6 class="text-bold text-light-gray">B</h6>
-                            </div>
-                            <a href="#" class="post-button d-grid">
-                                <button type="submit" formmethod="post" class="btn text-bold">Post</button>
-                            </a>
-                        </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div
+                    class="content2-container bg-light border-radius-1 box-shadow-1"
+                    style="background-image: url('../assets/mountain.jpg')"
+                  >
+                    <div class="content2">
+                      <div
+                        class="like-container like-travel box-shadow-primary"
+                      >
+                        <ion-icon
+                          name="heart-outline"
+                          class="icon-like like text-white"
+                        ></ion-icon>
+                      </div>
+                      <div class="text-content2">
+                        <h2 class="content-title text-primary text-extra-bold">
+                          Patio in Oia
+                        </h2>
+                        <h6 class="text-regular text-very-dark-gray mt-2">
+                          North-western tip of Santorini
+                        </h6>
+                      </div>
                     </div>
-
-                    <!-- Task -->
-                    <div class="task bg-white border-radius-3 box-shadow-3 d-flex align-items-center justify-content-between">
-                        <div class="text-task">
-                            <h2 class="text-primary text-extra-bold">Create new task</h2>
-                            <h6 class="text-light-gray text-medium mt-1">You can create new task here</h6>
-                        </div>
-                        <ion-icon name="add-circle" class="text-primary icon"></ion-icon>
-                    </div>
-                </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </main>
+          </div>
+
+          <!-- Inspiration -->
+          <div class="inspiration container col-4">
+            <label for="" class="text-bold active">Inspiration</label>
+            <div class="inspiration-content-container">
+              <a href="#">
+                <div
+                  class="inspiration-content bg-white border-radius-3 box-shadow-3"
+                >
+                  <h2 class="text-primary text-extra-bold">
+                    Only 6 Exercises <br />
+                    You Need to Get a Six-Pack
+                  </h2>
+                  <h6 class="text-semi-bold text-very-dark-gray mt-2">
+                    The Best Abs Workout
+                  </h6>
+                  <p class="text-light text-very-dark-gray mt-2">
+                    Want to look like Cristiano Ronaldo? We asked some of the
+                    country's best trainers to share their favorite abs
+                    exercises to get there.
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="inspiration-content bg-white border-radius-3 box-shadow-3"
+                >
+                  <h2 class="text-primary text-extra-bold">
+                    Only 6 Exercises <br />
+                    You Need to Get a Six-Pack
+                  </h2>
+                  <h6 class="text-semi-bold text-very-dark-gray mt-2">
+                    The Best Abs Workout
+                  </h6>
+                  <p class="text-light text-very-dark-gray mt-2">
+                    Want to look like Cristiano Ronaldo? We asked some of the
+                    country's best trainers to share their favorite abs
+                    exercises to get there.
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="inspiration-content bg-white border-radius-3 box-shadow-3"
+                >
+                  <h2 class="text-primary text-extra-bold">
+                    Only 6 Exercises <br />
+                    You Need to Get a Six-Pack
+                  </h2>
+                  <h6 class="text-semi-bold text-very-dark-gray mt-2">
+                    The Best Abs Workout
+                  </h6>
+                  <p class="text-light text-very-dark-gray mt-2">
+                    Want to look like Cristiano Ronaldo? We asked some of the
+                    country's best trainers to share their favorite abs
+                    exercises to get there.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Post & Task -->
+          <div class="post-task">
+              <!-- Post -->
+              <aside class="vh-100" style="position: sticky; top: 0; z-index: 100">
+              <div
+                class="post bg-white border-radius-3 box-shadow-3"
+                style="margin-top: 3.002rem !important"
+              >
+                <h2 class="text-primary text-extra-bold">New post</h2>
+                <div class="write-content d-flex gap-4 mt-4 mb-4">
+                  <img
+                    src="../assets/profile.png"
+                    alt="profile"
+                    class="profile-photo d-block"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Write content..."
+                    class="border-0"
+                  />
+                </div>
+                <div class="line mt-2"></div>
+                <div
+                  class="option-post d-flex justify-content-between mt-4 align-items-center"
+                >
+                  <div class="option d-flex gap-4" style="font-size: 1rem">
+                    <ion-icon
+                      name="images-outline"
+                      class="text-light-gray"
+                    ></ion-icon>
+                    <h6 class="text-bold text-light-gray">H1</h6>
+                    <h6 class="text-bold text-light-gray">H2</h6>
+                    <h6 class="text-bold text-light-gray">B</h6>
+                  </div>
+                  <a href="#" class="post-button d-grid">
+                    <button
+                      type="submit"
+                      formmethod="post"
+                      class="btn text-bold"
+                    >
+                      Post
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Task -->
+              <div
+                class="task bg-white border-radius-3 box-shadow-3 d-flex align-items-center justify-content-between"
+              >
+                <div class="text-task">
+                  <h2 class="text-primary text-extra-bold">Create new task</h2>
+                  <h6 class="text-light-gray text-medium mt-1">
+                    You can create new task here
+                  </h6>
+                </div>
+                <ion-icon
+                  name="add-circle"
+                  class="text-primary icon"
+                ></ion-icon>
+              </div>
+            </aside>
+            </div>
+        </div>
+      </main>
     </div>
     <script src="../js/dashboard.js"></script>
-</body>
-
+  </body>
 </html>
